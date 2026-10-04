@@ -1,0 +1,759 @@
+{
+  "users": [
+    {
+      "id": "user-demo-admin",
+      "name": "Eleanor Vance (Admin)",
+      "email": "admin@store.com",
+      "password": "$2b$10$ixLqsC.l4Sg2b7c/ydm59OMyAdERNX22I8DGvhYhJNRwZBIP9/VJC",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80",
+      "isBlocked": false,
+      "addresses": [
+        {
+          "id": "addr-1",
+          "fullName": "Eleanor Vance",
+          "street": "100 Silicon Boulevard, Suite 400",
+          "city": "San Francisco",
+          "state": "CA",
+          "zipCode": "94107",
+          "country": "United States",
+          "phone": "+1 (555) 234-5678",
+          "isDefault": true
+        }
+      ],
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "user-demo-customer",
+      "name": "Sophia Martinez",
+      "email": "customer@store.com",
+      "password": "$2b$10$Dl1OhFteLoeb/uLxcYWgueAhLlu0CWK8F3cc/gbyKDew7pos66YN2",
+      "role": "user",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80",
+      "isBlocked": false,
+      "addresses": [
+        {
+          "id": "addr-2",
+          "fullName": "Sophia Martinez",
+          "street": "742 Evergreen Terrace",
+          "city": "Austin",
+          "state": "TX",
+          "zipCode": "78701",
+          "country": "United States",
+          "phone": "+1 (555) 876-5432",
+          "isDefault": true
+        }
+      ],
+      "createdAt": "2026-02-14T08:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-electronics",
+      "name": "Electronics & Gadgets",
+      "slug": "electronics",
+      "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&q=80",
+      "description": "Cutting edge electronics, laptops, smartphones and accessories",
+      "isActive": true
+    },
+    {
+      "id": "cat-fashion",
+      "name": "Fashion & Apparel",
+      "slug": "fashion",
+      "image": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80",
+      "description": "Trendy clothing, sneakers, jackets and premium lifestyle wear",
+      "isActive": true
+    },
+    {
+      "id": "cat-audio",
+      "name": "Audio & Sound",
+      "slug": "audio",
+      "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80",
+      "description": "High-fidelity headphones, noise-canceling earbuds, and speakers",
+      "isActive": true
+    },
+    {
+      "id": "cat-home",
+      "name": "Home & Workspace",
+      "slug": "home-workspace",
+      "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80",
+      "description": "Ergonomic furniture, ambient lamps and aesthetic desk setups",
+      "isActive": true
+    },
+    {
+      "id": "cat-accessories",
+      "name": "Accessories & Watches",
+      "slug": "accessories",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+      "description": "Smart watches, travel bags, leather goods and everyday essentials",
+      "isActive": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "AeroSound Pro Noise-Cancelling Headphones",
+      "slug": "aerosound-pro-headphones",
+      "description": "Experience pure sonic bliss with 45-hour battery life, hybrid active noise cancellation, customized EQ presets, and plush memory foam ear cushions.",
+      "price": 299,
+      "originalPrice": 379,
+      "discount": 21,
+      "category": "Audio & Sound",
+      "categorySlug": "audio",
+      "brand": "AeroSound",
+      "stock": 24,
+      "rating": 4.9,
+      "numReviews": 38,
+      "isFeatured": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1000&q=80",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=1000&q=80",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Midnight Black",
+          "Platinum Silver",
+          "Deep Navy"
+        ],
+        "sizes": [
+          "Standard"
+        ]
+      },
+      "specs": {
+        "Battery Life": "Up to 45 Hours",
+        "Connectivity": "Bluetooth 5.3 + 3.5mm Aux",
+        "Weight": "250g",
+        "Fast Charge": "10 min charge = 5 hrs play"
+      }
+    },
+    {
+      "id": "prod-2",
+      "name": "Nebula Ultra Smartwatch Series X",
+      "slug": "nebula-ultra-smartwatch",
+      "description": "Sapphire crystal display, ECG monitoring, titanium casing, and dual-frequency GPS. Built for athletes, adventurers, and everyday tech enthusiasts.",
+      "price": 399,
+      "originalPrice": 499,
+      "discount": 20,
+      "category": "Accessories & Watches",
+      "categorySlug": "accessories",
+      "brand": "Nebula",
+      "stock": 18,
+      "rating": 4.8,
+      "numReviews": 29,
+      "isFeatured": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=1000&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Space Gray",
+          "Desert Sand",
+          "Alpine Silver"
+        ],
+        "sizes": [
+          "41mm",
+          "45mm",
+          "49mm Ultra"
+        ]
+      },
+      "specs": {
+        "Display": "1.92\" Always-On OLED Retina",
+        "Water Resistance": "50m / 5ATM",
+        "Sensors": "ECG, SpO2, Heart Rate, Altimeter"
+      }
+    },
+    {
+      "id": "prod-3",
+      "name": "Vortex Lumina Mechanical Gaming Keyboard",
+      "slug": "vortex-lumina-keyboard",
+      "description": "Hot-swappable tactile mechanical switches, per-key RGB backlighting, aircraft-grade aluminum top plate, and sound-dampening acoustic foams.",
+      "price": 149,
+      "originalPrice": 189,
+      "discount": 21,
+      "category": "Electronics & Gadgets",
+      "categorySlug": "electronics",
+      "brand": "VortexTech",
+      "stock": 35,
+      "rating": 4.7,
+      "numReviews": 54,
+      "isFeatured": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1000&q=80",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Chalk White",
+          "Obsidian Black",
+          "Cyberpunk Purple"
+        ],
+        "sizes": [
+          "75% Compact",
+          "TKL",
+          "Full 100%"
+        ]
+      },
+      "specs": {
+        "Switch Type": "Gateron Pro Yellow (Pre-lubed)",
+        "Keycaps": "Double-shot PBT Cherry Profile",
+        "Connection": "Tri-mode (2.4G / BT / Type-C)"
+      }
+    },
+    {
+      "id": "prod-4",
+      "name": "Artisan Vegetable-Tanned Leather Jacket",
+      "slug": "artisan-leather-jacket",
+      "description": "Handcrafted from 100% full-grain calfskin leather with heavy-duty YKK gunmetal zippers and tailored quilted lining. A timeless wardrobe centerpiece.",
+      "price": 489,
+      "originalPrice": 650,
+      "discount": 25,
+      "category": "Fashion & Apparel",
+      "categorySlug": "fashion",
+      "brand": "Kavalier & Co.",
+      "stock": 8,
+      "rating": 4.9,
+      "numReviews": 16,
+      "isFeatured": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=1000&q=80",
+        "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Classic Black",
+          "Vintage Cognac Brown",
+          "Dark Espresso"
+        ],
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      },
+      "specs": {
+        "Material": "100% Full-grain Leather",
+        "Hardware": "Antiqued Brass / Gunmetal YKK",
+        "Fit": "Slim European tailored cut"
+      }
+    },
+    {
+      "id": "prod-5",
+      "name": "Zenith Minimalist Geometric Desk Lamp",
+      "slug": "zenith-minimalist-desk-lamp",
+      "description": "Precision-milled matte anodized aluminum architecture with touch dimming, 5 color temperature modes, and an integrated 15W MagSafe wireless charger.",
+      "price": 119,
+      "originalPrice": 159,
+      "discount": 25,
+      "category": "Home & Workspace",
+      "categorySlug": "home-workspace",
+      "brand": "Lumina Craft",
+      "stock": 42,
+      "rating": 4.6,
+      "numReviews": 22,
+      "isFeatured": false,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=1000&q=80",
+        "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Matte Black",
+          "Brushed Brass",
+          "Anodized Silver"
+        ],
+        "sizes": [
+          "Standard"
+        ]
+      },
+      "specs": {
+        "CRI": "Ra > 95 True Color",
+        "Wireless Charger": "Qi-certified 15W Fast Charge",
+        "Lifespan": "50,000+ Hours LED"
+      }
+    },
+    {
+      "id": "prod-6",
+      "name": "ErgoMotion Pro Mesh Office Chair",
+      "slug": "ergomotion-pro-chair",
+      "description": "Dynamic 4D adaptive lumbar support, breathable German elastomeric mesh, 135° recline lock, and whisper-quiet rollerblade caster wheels.",
+      "price": 429,
+      "originalPrice": 549,
+      "discount": 22,
+      "category": "Home & Workspace",
+      "categorySlug": "home-workspace",
+      "brand": "ErgoForm",
+      "stock": 14,
+      "rating": 4.9,
+      "numReviews": 67,
+      "isFeatured": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1580481077195-c3a821a58875?w=1000&q=80",
+        "https://images.unsplash.com/photo-1505797149-43b0069ec26b?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Shadow Gray",
+          "Graphite Black",
+          "Polar White"
+        ],
+        "sizes": [
+          "Standard Medium (5'2\"-6'4\")"
+        ]
+      },
+      "specs": {
+        "Weight Capacity": "330 lbs / 150 kg",
+        "Gas Lift": "Class 4 Heavy Duty BIFMA certified",
+        "Warranty": "10-Year Frame Warranty"
+      }
+    },
+    {
+      "id": "prod-7",
+      "name": "Urban Glide Streetwear Retro Sneakers",
+      "slug": "urban-glide-retro-sneakers",
+      "description": "Vintage silhouette crafted with Italian suede paneling, responsive EVA foam cushion midsole, and durable textured gum outsole for maximum grip.",
+      "price": 135,
+      "originalPrice": 170,
+      "discount": 20,
+      "category": "Fashion & Apparel",
+      "categorySlug": "fashion",
+      "brand": "SoleCraft",
+      "stock": 28,
+      "rating": 4.8,
+      "numReviews": 44,
+      "isFeatured": false,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Crimson & White",
+          "Vintage Cream & Navy",
+          "Onyx Monochrome"
+        ],
+        "sizes": [
+          "US 8",
+          "US 9",
+          "US 10",
+          "US 11",
+          "US 12"
+        ]
+      },
+      "specs": {
+        "Upper": "Italian Suede + Breathable Mesh",
+        "Midsole": "Ultra-cushioned EVA",
+        "Outsole": "High-traction Natural Gum Rubber"
+      }
+    },
+    {
+      "id": "prod-8",
+      "name": "SoundWave Pulse Portable Bluetooth Speaker",
+      "slug": "soundwave-pulse-speaker",
+      "description": "360-degree immersive acoustic sound with punchy bass radiators, IP67 waterproof & dustproof certification, and party sync link mode up to 100 units.",
+      "price": 89,
+      "originalPrice": 119,
+      "discount": 25,
+      "category": "Audio & Sound",
+      "categorySlug": "audio",
+      "brand": "AeroSound",
+      "stock": 50,
+      "rating": 4.7,
+      "numReviews": 31,
+      "isFeatured": false,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=1000&q=80",
+        "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Charcoal Teal",
+          "Storm Black",
+          "Sunset Orange"
+        ],
+        "sizes": [
+          "Compact"
+        ]
+      },
+      "specs": {
+        "Power Output": "30W RMS Stereo",
+        "Battery": "24 Hours continuous playback",
+        "Waterproof": "IP67 Submersible"
+      }
+    },
+    {
+      "id": "prod-9",
+      "name": "Chronos Heritage Automatic Chronograph",
+      "slug": "chronos-heritage-chronograph",
+      "description": "Self-winding mechanical automatic movement with 42-hour power reserve, domed sapphire glass, exhibition case back, and Horween leather strap.",
+      "price": 599,
+      "originalPrice": 750,
+      "discount": 20,
+      "category": "Accessories & Watches",
+      "categorySlug": "accessories",
+      "brand": "Kavalier & Co.",
+      "stock": 12,
+      "rating": 4.9,
+      "numReviews": 19,
+      "isFeatured": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=1000&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Emerald Sunburst",
+          "Deep Sea Blue",
+          "Opal White"
+        ],
+        "sizes": [
+          "40mm Case"
+        ]
+      },
+      "specs": {
+        "Movement": "Japanese Miyota 9100 Automatic",
+        "Water Resistance": "10 ATM / 100 Meters",
+        "Strap": "Genuine Horween Leather with deployant clasp"
+      }
+    },
+    {
+      "id": "prod-10",
+      "name": "Apex Studio Wireless 4K Streaming WebCam",
+      "slug": "apex-studio-4k-webcam",
+      "description": "Ultra HD 4K 60FPS sensor with HDR, AI auto-framing, dual stereo beamforming noise-cancellation microphones, and physical privacy shutter.",
+      "price": 179,
+      "originalPrice": 220,
+      "discount": 19,
+      "category": "Electronics & Gadgets",
+      "categorySlug": "electronics",
+      "brand": "VortexTech",
+      "stock": 31,
+      "rating": 4.6,
+      "numReviews": 28,
+      "isFeatured": false,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=1000&q=80",
+        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Matte Black",
+          "Studio White"
+        ],
+        "sizes": [
+          "Universal Mount"
+        ]
+      },
+      "specs": {
+        "Resolution": "4K UHD @ 60 FPS / 1080p @ 120 FPS",
+        "Field of View": "90° Adjustable Wide Angle",
+        "Focus": "Phase Detection Fast Autofocus"
+      }
+    },
+    {
+      "id": "prod-11",
+      "name": "Nomad Heavy-Duty Weatherproof Travel Backpack",
+      "slug": "nomad-travel-backpack",
+      "description": "35L expandable waterproof ballistic nylon shell with dedicated 16-inch padded laptop sleeve, RFID-blocking passport pocket, and luggage pass-through.",
+      "price": 169,
+      "originalPrice": 210,
+      "discount": 20,
+      "category": "Accessories & Watches",
+      "categorySlug": "accessories",
+      "brand": "SoleCraft",
+      "stock": 22,
+      "rating": 4.8,
+      "numReviews": 36,
+      "isFeatured": true,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1000&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Midnight Stealth",
+          "Olive Drab",
+          "Slate Grey"
+        ],
+        "sizes": [
+          "35L Expandable"
+        ]
+      },
+      "specs": {
+        "Volume": "28L expandable to 35L",
+        "Materials": "1680D Cordura Ballistic Nylon",
+        "Laptop Compartment": "Fits up to 16\" MacBook Pro"
+      }
+    },
+    {
+      "id": "prod-12",
+      "name": "Artisan Ceramic Pour-Over Coffee Brewer Set",
+      "slug": "artisan-pour-over-coffee-set",
+      "description": "Hand-thrown matte Japanese ceramic dripper with insulated borosilicate glass carafe, walnut timber collar, and precision stainless steel gooseneck scale base.",
+      "price": 79,
+      "originalPrice": 99,
+      "discount": 20,
+      "category": "Home & Workspace",
+      "categorySlug": "home-workspace",
+      "brand": "Lumina Craft",
+      "stock": 30,
+      "rating": 4.9,
+      "numReviews": 45,
+      "isFeatured": false,
+      "isActive": true,
+      "images": [
+        "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=1000&q=80",
+        "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=1000&q=80"
+      ],
+      "variants": {
+        "colors": [
+          "Matte Sand",
+          "Charcoal Slate",
+          "Sage Mist"
+        ],
+        "sizes": [
+          "600ml / 2-4 Cups"
+        ]
+      },
+      "specs": {
+        "Capacity": "600ml Carafe",
+        "Material": "Thermal Borosilicate Glass & Ceramic",
+        "Dishwasher Safe": "Yes (except wooden parts)"
+      }
+    }
+  ],
+  "coupons": [
+    {
+      "id": "coup-1",
+      "code": "WELCOME50",
+      "discountType": "flat",
+      "discountValue": 50,
+      "minOrderValue": 200,
+      "expiryDate": "2027-12-31",
+      "usageLimit": 500,
+      "usedCount": 34,
+      "isActive": true
+    },
+    {
+      "id": "coup-2",
+      "code": "SAVE20",
+      "discountType": "percentage",
+      "discountValue": 20,
+      "minOrderValue": 100,
+      "expiryDate": "2027-12-31",
+      "usageLimit": 1000,
+      "usedCount": 88,
+      "isActive": true
+    },
+    {
+      "id": "coup-3",
+      "code": "SPECIAL10",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "minOrderValue": 50,
+      "expiryDate": "2027-12-31",
+      "usageLimit": 2000,
+      "usedCount": 142,
+      "isActive": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "productId": "prod-1",
+      "userId": "user-demo-customer",
+      "userName": "Sophia Martinez",
+      "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80",
+      "rating": 5,
+      "comment": "The noise cancellation is astounding. I use them on long flights and daily commutes. Battery life easily lasts me over a full week!",
+      "helpfulCount": 24,
+      "createdAt": "2026-08-15T10:30:00Z"
+    },
+    {
+      "id": "rev-2",
+      "productId": "prod-1",
+      "userId": "user-2",
+      "userName": "Marcus Vance",
+      "userAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80",
+      "rating": 5,
+      "comment": "Soundstage is crisp with deep sub-bass without being muddy. Memory foam ear cushions do not sweat even during 6 hour mixing sessions.",
+      "helpfulCount": 11,
+      "createdAt": "2026-08-20T14:15:00Z"
+    },
+    {
+      "id": "rev-3",
+      "productId": "prod-2",
+      "userId": "user-demo-customer",
+      "userName": "Sophia Martinez",
+      "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80",
+      "rating": 5,
+      "comment": "Hands down the best looking smartwatch on the market. Titanium build feels super premium and battery easily lasts 3 full days.",
+      "helpfulCount": 19,
+      "createdAt": "2026-09-02T09:45:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-8831",
+      "orderId": "ORD-8831",
+      "userId": "user-demo-customer",
+      "user": {
+        "id": "user-demo-customer",
+        "name": "Sophia Martinez",
+        "email": "customer@store.com"
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "name": "AeroSound Pro Noise-Cancelling Headphones",
+          "price": 299,
+          "qty": 1,
+          "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1000&q=80",
+          "selectedColor": "Midnight Black",
+          "selectedSize": "Standard"
+        },
+        {
+          "productId": "prod-5",
+          "name": "Zenith Minimalist Geometric Desk Lamp",
+          "price": 119,
+          "qty": 1,
+          "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=1000&q=80",
+          "selectedColor": "Matte Black",
+          "selectedSize": "Standard"
+        }
+      ],
+      "subtotal": 418,
+      "discount": 20,
+      "tax": 31.84,
+      "shippingFee": 0,
+      "totalAmount": 429.84,
+      "status": "Delivered",
+      "paymentInfo": {
+        "method": "card",
+        "status": "Completed",
+        "transactionId": "TXN-9948214"
+      },
+      "shippingAddress": {
+        "fullName": "Sophia Martinez",
+        "street": "742 Evergreen Terrace",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701",
+        "country": "United States",
+        "phone": "+1 (555) 876-5432"
+      },
+      "trackingTimeline": [
+        {
+          "status": "Order Placed",
+          "time": "2026-09-10T11:00:00Z",
+          "done": true
+        },
+        {
+          "status": "Processing & Packed",
+          "time": "2026-09-10T14:30:00Z",
+          "done": true
+        },
+        {
+          "status": "Shipped (Carrier: FedEx Express)",
+          "time": "2026-09-11T09:00:00Z",
+          "done": true
+        },
+        {
+          "status": "Delivered",
+          "time": "2026-09-13T16:20:00Z",
+          "done": true
+        }
+      ],
+      "createdAt": "2026-09-10T11:00:00Z"
+    },
+    {
+      "id": "ord-9420",
+      "orderId": "ORD-9420",
+      "userId": "user-demo-customer",
+      "user": {
+        "id": "user-demo-customer",
+        "name": "Sophia Martinez",
+        "email": "customer@store.com"
+      },
+      "items": [
+        {
+          "productId": "prod-2",
+          "name": "Nebula Ultra Smartwatch Series X",
+          "price": 399,
+          "qty": 1,
+          "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000&q=80",
+          "selectedColor": "Space Gray",
+          "selectedSize": "45mm"
+        }
+      ],
+      "subtotal": 399,
+      "discount": 50,
+      "tax": 27.92,
+      "shippingFee": 0,
+      "totalAmount": 376.92,
+      "status": "Shipped",
+      "paymentInfo": {
+        "method": "upi",
+        "status": "Completed",
+        "transactionId": "UPI-7712391"
+      },
+      "shippingAddress": {
+        "fullName": "Sophia Martinez",
+        "street": "742 Evergreen Terrace",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701",
+        "country": "United States",
+        "phone": "+1 (555) 876-5432"
+      },
+      "trackingTimeline": [
+        {
+          "status": "Order Placed",
+          "time": "2026-10-01T10:00:00Z",
+          "done": true
+        },
+        {
+          "status": "Processing & Packed",
+          "time": "2026-10-01T15:00:00Z",
+          "done": true
+        },
+        {
+          "status": "In Transit",
+          "time": "2026-10-02T11:30:00Z",
+          "done": true
+        },
+        {
+          "status": "Out for Delivery",
+          "time": "Expected by tomorrow",
+          "done": false
+        }
+      ],
+      "createdAt": "2026-10-01T10:00:00Z"
+    }
+  ],
+  "carts": {
+    "user-demo-customer": {
+      "items": []
+    }
+  },
+  "wishlists": {
+    "user-demo-customer": [
+      "prod-3",
+      "prod-7"
+    ]
+  }
+}
