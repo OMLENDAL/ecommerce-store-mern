@@ -44,9 +44,19 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/coupons', couponRoutes);
 app.use('/api/wishlist', wishlistRoutes);
 
-// Error Middleware
-app.use(notFound);
-app.use(errorHandler);
+// Serve React frontend in production
+if (process.env.NODE_ENV === 'production') {
+  const clientDistPath = path.join(__dirname, '..', 'client', 'dist');
+  app.use(express.static(clientDistPath));
+  // All non-API routes serve the React app
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(clientDistPath, 'index.html'));
+  });
+} else {
+  // Error Middleware (dev only — in prod React catch-all handles 404s)
+  app.use(notFound);
+  app.use(errorHandler);
+}
 
 const PORT = process.env.PORT || 5000;
 

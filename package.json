@@ -5,10 +5,13 @@
   "scripts": {
     "server": "npm --prefix server run dev",
     "client": "npm --prefix client run dev",
-    "install:all": "npm --prefix server install & npm --prefix client install",
-    "dev": "node dev-runner.js"
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev": "node dev-runner.js",
+    "build": "npm --prefix server install && npm --prefix client install && npm --prefix client run build",
+    "start": "node server/server.js"
   },
   "keywords": ["ecommerce", "react", "express", "fullstack"],
   "author": "",
   "license": "ISC"
 }
+
